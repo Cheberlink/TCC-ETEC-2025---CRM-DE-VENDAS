@@ -1,16 +1,17 @@
-import "./globals.css"
+import "./globals.css";
+import Header from "@/components/header";
 
-export default function DashboardLayout({
+export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body>
-
-        <main>{children}</main>
+      <body className="h-full">
+      
+        {children}
       </body>
     </html>
-  )
+  );
 }

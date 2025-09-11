@@ -1,16 +1,7 @@
-"use client"
-
-import React from 'react';
-import { useState } from 'react';
-
-const Page: React.FC = () => {
-  const [Numero, SetNumero] = useState(0)
-  return (
-    <div>
-      <h1>{Numero}</h1>
-      <button onClick={() => {SetNumero(Numero+1)}}>Sexoo</button>
-    </div>
-  );
-};
-
-export default Page;
+export default function Index() {
+    return (
+        <div className="grid min-h-svh lg:grid-cols-2">
+            {/* Conteúdo será adicionado aqui */}
+        </div>
+    );
+}
