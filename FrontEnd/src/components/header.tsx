@@ -50,30 +50,39 @@ export default function Header({
     );
   else
     return (
-      <header className="w-full h-32 bg-red-900 flex items-center justify-between px-6 py-4">
-        {/* Logo */}
-       <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 bg-white flex items-center justify-center rounded">
-            <span className="text-red-900 font-bold text-xl">Logo</span>
-          </div>
-          <p className="text-white font-bold text-lg">NOIR</p>
-        </div>
+     <header className="w-full h-32 bg-red-900 grid grid-cols-3 items-center px-6">
+  {/* Logo à esquerda */}
+  <div className="flex items-center space-x-3">
+    <div className="w-12 h-12 bg-white flex items-center justify-center rounded">
+      <span className="text-red-900 font-bold text-xl">Logo</span>
+    </div>
+    <p className="text-white font-bold text-lg">NOIR</p>
+  </div>
 
-        {/* Menu Central */}
-  <nav className="hidden md:flex flex-1 justify-center space-x-6">
-    <button className="text-white px-3 py-2 text-[1.4rem] font-bold hover:bg-[#5D1111] hover:rounded-lg  transition-all duration-200 active:bg-red-800">Produtos</button>
-    <button className="text-white px-3 py-2 text-[1.4rem] font-bold hover:bg-[#5D1111] hover:rounded-lg  transition-all duration-200 active:bg-red-800">Recursos</button>
-    <button className="text-white px-3 py-2 text-[1.4rem] font-bold hover:bg-[#5D1111] hover:rounded-lg  transition-all duration-200 active:bg-red-800">Preços</button>
+  {/* Menu central */}
+  <nav className="hidden md:flex justify-center space-x-6">
+    <button className="text-white px-3 py-2 text-[1.4rem] font-bold hover:bg-[#5D1111] hover:rounded-lg transition-all duration-200 active:bg-red-800">
+      Produtos
+    </button>
+    <button className="text-white px-3 py-2 text-[1.4rem] font-bold hover:bg-[#5D1111] hover:rounded-lg transition-all duration-200 active:bg-red-800">
+      Recursos
+    </button>
+    <button className="text-white px-3 py-2 text-[1.4rem] font-bold hover:bg-[#5D1111] hover:rounded-lg transition-all duration-200 active:bg-red-800">
+      Preços
+    </button>
   </nav>
 
-  {/* Ações à Direita */}
-  <div className="flex items-center space-x-4">
-    <button className="text-white px-3 py-2 text-[1.4rem] font-bold hover:bg-[#5D1111] hover:rounded-lg  transition-all duration-200 active:bg-red-800">Assine agora</button>
-    <button className="bg-black text-white px-4 py-2 text-[1.1rem] font-bold rounded hover:rounded-lg hover:bg-[#393939] transition-all duration-200 active:bg-white">
+  {/* Botões à direita */}
+  <div className="flex items-center justify-end space-x-4">
+    <button className="text-white px-3 py-2 text-[1.4rem] font-bold hover:bg-[#5D1111] hover:rounded-lg transition-all duration-200 active:bg-red-800">
+      Assine agora
+    </button>
+    <button className="bg-black text-white px-4 py-2 text-[1.1rem] font-bold rounded hover:rounded-lg hover:bg-[#393939] transition-all duration-200 active:bg-white active:text-black">
       Registre-se
     </button>
   </div>
-      </header>
+</header>
+
     );
 }
 
